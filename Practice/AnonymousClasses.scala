@@ -1,0 +1,3 @@
+object AnonymousClasses extends App{
+
+}
