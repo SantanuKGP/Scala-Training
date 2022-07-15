@@ -18,5 +18,5 @@ object Generics extends App{
   class Dog extends Animal
 
   class CovariantList[+A]
-  val
+
 }
