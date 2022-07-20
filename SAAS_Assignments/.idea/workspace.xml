@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem2$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem2.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem1$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem1$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problem1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problem3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem3.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,16 +38,30 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.problem2">
-    <configuration name="problem1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="problem1" />
+  <component name="RunManager" selected="Application.problem9">
+    <configuration name="problem2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="problem2" />
       <module name="SAAS_Assignments" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="problem2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="problem2" />
+    <configuration name="problem3" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="problem3" />
+      <module name="SAAS_Assignments" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="problem4" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="problem4" />
+      <module name="SAAS_Assignments" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="problem9" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="problem9" />
       <module name="SAAS_Assignments" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,27 +74,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="segmentTree" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="segmentTree" />
-      <module name="SAAS_Assignments" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="thief" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="thief" />
-      <module name="SAAS_Assignments" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.problem9" />
+        <item itemvalue="Application.problem4" />
+        <item itemvalue="Application.problem3" />
         <item itemvalue="Application.problem2" />
         <item itemvalue="Application.readMe" />
-        <item itemvalue="Application.segmentTree" />
-        <item itemvalue="Application.thief" />
-        <item itemvalue="Application.problem1" />
       </list>
     </recent_temporary>
   </component>
@@ -95,5 +94,8 @@
       <updated>1658150301487</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SAAS_Assignments$problem3.ic" NAME="problem3 Coverage Results" MODIFIED="1658315314228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -30,7 +30,7 @@ object problem1 extends App{
     tol2(x1*x1+x2*x2,x3*x3) || tol2(x2*x2+x3*x3,x1*x1) || tol2(x3*x3+x1*x1,x2*x2)
   }
   def printType(x1 : Double,x2 : Double, x3 : Double) : Unit={
-    if(existence(x1,x2,x3)==false) println("Does not exist")
+    if(!existence(x1,x2,x3)) println("Does not exist")
     else if(isEquilateral(x1,x2,x3)) println("Equilateral")
     else if(rightAngled(x1,x2,x3)) println("Right Angled")
     else if(isIsosceles(x1,x2,x3)) println("Isosceles")
