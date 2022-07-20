@@ -1,0 +1,3 @@
+object interesting extends App{
+
+}

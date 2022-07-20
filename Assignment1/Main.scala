@@ -56,12 +56,14 @@ object Main extends App{
 
 
   def thief_data(ix: String): String={
+    val flip= ix.foldLeft('1'-ix.head)((x,y)=> if(x.head==x.tail.head) x else x+1)
+    /*
     @tailrec
     def flip(x: String,count: Int=0): Int={
       if(x.tail.isEmpty ) count
       else if(x.head==x.tail.head) flip(x.tail,count)
       else flip(x.tail,count+1)
-    }
+    }*/
     val t=('1'-ix.head)
     (flip(ix)+t).toString
   }
