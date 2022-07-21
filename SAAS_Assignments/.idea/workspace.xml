@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem1$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem1$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem1.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem3.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problem5.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem5.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problem9.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem9.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +37,30 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.problem9">
-    <configuration name="problem2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="problem2" />
+  <component name="RunManager" selected="Application.problem7">
+    <configuration name="practice" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="practice" />
       <module name="SAAS_Assignments" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="problem3" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="problem3" />
+    <configuration name="problem5" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="problem5" />
       <module name="SAAS_Assignments" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="problem4" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="problem4" />
+    <configuration name="problem6" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="problem6" />
+      <module name="SAAS_Assignments" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="problem7" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="problem7" />
       <module name="SAAS_Assignments" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -67,20 +73,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="readMe" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="readMe" />
-      <module name="SAAS_Assignments" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.problem7" />
         <item itemvalue="Application.problem9" />
-        <item itemvalue="Application.problem4" />
-        <item itemvalue="Application.problem3" />
-        <item itemvalue="Application.problem2" />
-        <item itemvalue="Application.readMe" />
+        <item itemvalue="Application.practice" />
+        <item itemvalue="Application.problem6" />
+        <item itemvalue="Application.problem5" />
       </list>
     </recent_temporary>
   </component>
