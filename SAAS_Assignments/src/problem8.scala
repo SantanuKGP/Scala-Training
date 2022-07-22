@@ -8,8 +8,16 @@ object problem8 extends App{
   }
   val input=readLine().split(" ").map(_.toInt)
   val len=input(0)
-  val query=input(1)
-  val str="abcdefghijklmnopqrstuvwxyz".slice(0,len)
-  val fact_list= Array.range(1,len).map(x => factorial(x)).foreach(println(_))
+  var query=input(1)-1
+  var str="abcdefghijklmnopqrstuvwxyz".slice(0,len)
+  var fact_list= Array.range(0,len).map(x => factorial(x)).reverse//.foreach(println(_))
   var result=""
+  while(!str.isEmpty){
+    val char_ = str(query / fact_list.head)
+    query=query % fact_list.head
+    str=str.filter(_!=char_)
+    result=result+char_
+    fact_list=fact_list.tail
+  }
+  println(result)
 }
