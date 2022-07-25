@@ -1,8 +1,14 @@
-import scala.io.StdIn.readLine
-
-import scala.collection.mutable.Map
+import scala.io.StdIn._
 object practice extends App{
-  val m=Map[Int,Int](1->10,18->2,2->9,6->3,5->6)
-  m.keys.foreach{ i=> println(i + " : " + m(i))}
+
 
 }
+/*
+  1. Learning from another problem's part:
+  val str=Array.range(1,3).foldLeft("{0}")((x,y) => x+ " {" + y + "}")
+  var sum0 = readf(str).map(_.toString.toInt)
+  println(sum0.sum)
+
+  2. FOR MUTABLE we need aliasing Map,as example
+  import scala.collection.mutable.{Map => mMap}
+*/
