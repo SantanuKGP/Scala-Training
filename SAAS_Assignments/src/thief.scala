@@ -7,7 +7,7 @@ object thief extends App{
     str.sliding(2).toArray.foldLeft('1'-str.head)((x,y)=> {if(y.head!=y(1)) x+1 else x})
   }
   def flip3(str: String):Int={
-    str.sliding(2).filter(x => x(0) != x(1)).toList.length
+    str.sliding(2).filter(x => x(0) != x(1)).toList.length+ '1'-str.head
   }
 
   println(flip1("0011"))
