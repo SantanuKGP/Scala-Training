@@ -16,5 +16,12 @@ object thief extends App{
   println(flip2("10011"))
   println(flip3("0011"))
   println(flip3("10011"))
-}
 
+  /*Another code*/
+  def reducer(n: String,multiplier: Int=1): String = {
+    if(BigInt(n) <10) n
+    else reducer((n * multiplier).split("").map(_.toInt).sum.toString)
+  }
+  println(reducer("844658468468468689796565", 769879 ))
+
+}

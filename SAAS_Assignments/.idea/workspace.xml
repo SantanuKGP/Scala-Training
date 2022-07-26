@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem14.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem14.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem16.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem16.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problm15.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thief.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/thief.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
