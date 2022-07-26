@@ -17,7 +17,9 @@ object thief extends App{
   println(flip3("0011"))
   println(flip3("10011"))
 
-  /*Another code*/
+  /*Another code problem 3*/
+// We can not use Long because that operation will be invalid
+//  It is O(n) in time and space complexity for both. There is better option.
   def reducer(n: String,multiplier: Int=1): String = {
     if(BigInt(n) <10) n
     else reducer((n * multiplier).split("").map(_.toInt).sum.toString)

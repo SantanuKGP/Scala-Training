@@ -9,5 +9,4 @@ object problem14 extends App{
   }
   val str=readLine()
   val wordList=str.split(" ")
-
 }
