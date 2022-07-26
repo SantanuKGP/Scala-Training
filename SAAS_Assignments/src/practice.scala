@@ -1,7 +1,13 @@
 import scala.io.StdIn._
+import scala.collection.mutable.Map
 object practice extends App{
-
-
+  var m= Map[Char, Int]().withDefaultValue(0)
+  val word="STRAIGHT"
+  word.foreach(c => m(c)=m(c)+1)
+  m.keys.foreach{ x=>
+    println(x + " : " +m(x))
+  }
+  println(word.length)
 }
 /*
   1. Learning from another problem's part:

@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problem13.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem13.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problem14.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem14.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thief.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/thief.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,16 +39,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.problem3">
+  <component name="RunManager" selected="Application.practice">
     <configuration name="practice" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="practice" />
-      <module name="SAAS_Assignments" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="problem11" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="problem11" />
       <module name="SAAS_Assignments" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,13 +68,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="thief" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="thief" />
+      <module name="SAAS_Assignments" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.problem3" />
-        <item itemvalue="Application.problem13" />
-        <item itemvalue="Application.problem12" />
-        <item itemvalue="Application.problem11" />
         <item itemvalue="Application.practice" />
+        <item itemvalue="Application.problem13" />
+        <item itemvalue="Application.thief" />
+        <item itemvalue="Application.problem3" />
+        <item itemvalue="Application.problem12" />
       </list>
     </recent_temporary>
   </component>
