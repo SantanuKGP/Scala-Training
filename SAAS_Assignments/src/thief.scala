@@ -1,3 +1,14 @@
+import scala.io.Source
+
+object thief extends App {
+  val source = Source.fromFile("thief_data.txt")
+  source.getLines().foreach { line =>
+    var someList = line.toList
+    val remoteUsed = someList.length - someList.sliding(2).filter(x => x(0) == x(1)).toList.length
+    println("Number of times Remote has been used : " + remoteUsed)
+  }
+}
+/*
 object thief extends App{
   def logic(x : String) : Boolean = (x == "01" || x == "10")
   def flip1(x: String):Int={
@@ -26,4 +37,4 @@ object thief extends App{
   }
   println(reducer("844658468468468689796565", 769879 ))
 
-}
+}*/
