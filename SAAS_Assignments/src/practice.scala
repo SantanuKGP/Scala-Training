@@ -1,7 +1,7 @@
 import scala.io.StdIn._
-import scala.collection.mutable.Map
+import scala.collection.mutable.{Map => mMap}
 object practice extends App{
-  var m= Map[Char, Int]().withDefaultValue(0)
+  var m= mMap[Char, Int]().withDefaultValue(0)
   val word="STRAIGHT"
   word.foreach(c => m(c)=m(c)+1)
   m.keys.foreach{ x=>

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problem14.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem14.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem15.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem15.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +93,17 @@
       <updated>1658150301487</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/practice.scala</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SAAS_Assignments$problem3.ic" NAME="problem3 Coverage Results" MODIFIED="1658315314228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
