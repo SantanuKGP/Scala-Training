@@ -16,7 +16,6 @@ object problem14 extends App{
   var dictionary=mMap[Char,Int]().withDefaultValue(0)
   for(i <- str) dictionary(i)=dictionary(i)+1
 
-
   def compare(myMap1: mMap[Char,Int],myMap2: mMap[Char,Int]=dictionary):Boolean={
     var condition=true
     myMap1.keys.foreach{x =>

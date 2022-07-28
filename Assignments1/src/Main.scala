@@ -9,10 +9,9 @@ object Main extends App{
     val it=read.getLines()
 
     val writer=new PrintWriter(new File(outputFile))
-
     while(it.hasNext){
       val line=it.next()
-      if(line!="") //line.filter(_ !=',').split(' ').map(_.toInt).foldLeft(0)( (x,y)=> x+1).toString
+      if(line!="")
       writer.write(f(line)+"\n")
       else writer.write( "\n")
     }
@@ -33,18 +32,6 @@ object Main extends App{
     if(z!=0) z else 9
   }
   println(coreDigit(9875,4))
-/*
-//  testing the validity of our new function
-  val out_f=raw"C:\Users\s.kundu\OneDrive - Adform\Documents\Output\out.txt"
-  val in_f=raw"C:\Users\s.kundu\OneDrive - Adform\Desktop\Editing\scala-2.13.8\bin\file.txt"
-  fileData(sumify,in_f,out_f)
-
-  def sumify(x: String) : String={
-    val y=x.split(", ").map(_.toInt).sum
-    y.toString
-  }
-
- */
   def exam_data(ix : String) : String={
     val x= ix.filter(_ !=',').split(' ').map(_.toInt)
     if(x(0)*x(1)-x(2)> 0) "No" else "Yes"
@@ -53,23 +40,33 @@ object Main extends App{
   var inDir="exam_data.txt"
   var outDir="exam_data_out.txt"
   fileData(exam_data,inDir,outDir)
-
+/*
+  class meow{
+    var x=0
+    def inc ={x= x+1; x}
+  }*/
 
   def thief_data(ix: String): String={
-    val flip= ix.foldLeft('1'-ix.head)((x,y)=> if(x.head==x.tail.head) x else x+1)
+    //var z=new meow();
+    var z=ix.head
+    val flip= ix.slice(1,ix.length).foldLeft('1'-ix.head){
+      (x,y)=>  {if(y!=z) {z=y;x+1 } else {z=y;x}}
+    }
+    flip.toString
+
     /*
     @tailrec
     def flip(x: String,count: Int=0): Int={
       if(x.tail.isEmpty ) count
       else if(x.head==x.tail.head) flip(x.tail,count)
       else flip(x.tail,count+1)
-    }*/
-    val t=('1'-ix.head)
-    (flip(ix)+t).toString
+    }
+    val t='1'-ix.head
+    (flip(ix)+t).toString*/
   }
   println(thief_data("10011"))
   println(thief_data("0011"))
   inDir="thief_data.txt"
   outDir="thief_data_out.txt"
-  fileData(thief_data,inDir,outDir)
+  //fileData(thief_data,inDir,outDir)
 }
