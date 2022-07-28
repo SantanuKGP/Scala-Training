@@ -1,0 +1,84 @@
+Data for Month : JANUARY
+Max fruit gainer: Rick, amount:  7.67
+Data for Month : FEBRUARY
+Max fruit gainer: Jake, amount:  10.32
+Data for Month : MARCH
+Max fruit gainer: Dick, amount:  14.81
+Data for Month : APRIL
+Max fruit gainer: Jake, amount:  18.75
+Data for Month : MAY
+Max fruit gainer: Jason, amount:  23.38
+Data for Month : JUNE
+Max fruit gainer: Dick, amount:  27.55
+Data for Month : JULY
+Max fruit gainer: Peter, amount:  31.54
+Data for Month : AUGUST
+Max fruit gainer: Dick, amount:  35.38
+Data for Month : SEPTEMBER
+Max fruit gainer: Jake, amount:  33.35
+Data for Month : OCTOBER
+Max fruit gainer: Jason, amount:  31.42
+Data for Month : NOVEMBER
+Max fruit gainer: John, amount:  26.28
+Data for Month : DECEMBER
+Max fruit gainer: Jason, amount:  19.91
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Best Gatherer by year Dick with amount = 271.99
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+For fruit apples, best gatherer is John, his amount is 88.15
+For fruit oranges, best gatherer is Nick, his amount is 47.55
+For fruit strawberries, best gatherer is Jason, his amount is 5.35
+For fruit plums, best gatherer is Jason, his amount is 23.80
+For fruit pears, best gatherer is Dick, his amount is 67.88
+For fruit tomatoes, best gatherer is Peter, his amount is 46.01
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+For month JANUARY best profitable fruit: oranges, profit= 22627.0633
+For month JANUARY least profitable fruit: plums, profit= 0.0000
+For month FEBRUARY best profitable fruit: oranges, profit= 24939.1637
+For month FEBRUARY least profitable fruit: plums, profit= 47.4543
+For month MARCH best profitable fruit: oranges, profit= 29628.4459
+For month MARCH least profitable fruit: plums, profit= 1829.0755
+For month APRIL best profitable fruit: oranges, profit= 30685.5085
+For month APRIL least profitable fruit: strawberries, profit= 3191.1928
+For month MAY best profitable fruit: oranges, profit= 30723.4697
+For month MAY least profitable fruit: strawberries, profit= 4088.1840
+For month JUNE best profitable fruit: pears, profit= 28778.6081
+For month JUNE least profitable fruit: strawberries, profit= 3934.1600
+For month JULY best profitable fruit: pears, profit= 33363.7521
+For month JULY least profitable fruit: strawberries, profit= 4843.9473
+For month AUGUST best profitable fruit: pears, profit= 35262.8266
+For month AUGUST least profitable fruit: strawberries, profit= 4641.0359
+For month SEPTEMBER best profitable fruit: pears, profit= 32821.9750
+For month SEPTEMBER least profitable fruit: strawberries, profit= 4595.3485
+For month OCTOBER best profitable fruit: pears, profit= 32472.8591
+For month OCTOBER least profitable fruit: strawberries, profit= 4048.8997
+For month NOVEMBER best profitable fruit: apples, profit= 29327.5790
+For month NOVEMBER least profitable fruit: strawberries, profit= 3252.4361
+For month DECEMBER best profitable fruit: apples, profit= 24978.0975
+For month DECEMBER least profitable fruit: oranges, profit= 2082.6420
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Best fruit by year pears with profit = 274009.2486
+Worst fruit by year strawberries with profit = 38519.3866
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+For month JANUARY best employee: Rick, profit= 6015.9675
+For month FEBRUARY best employee: Jake, profit= 7399.6204
+For month MARCH best employee: Jake, profit= 9812.5249
+For month APRIL best employee: Jake, profit= 11653.7587
+For month MAY best employee: Jason, profit= 14017.5289
+For month JUNE best employee: Dick, profit= 15779.9827
+For month JULY best employee: Peter, profit= 17336.8581
+For month AUGUST best employee: Dick, profit= 17430.1768
+For month SEPTEMBER best employee: Peter, profit= 15820.7707
+For month OCTOBER best employee: Nick, profit= 14945.2278
+For month NOVEMBER best employee: John, profit= 13046.2161
+For month DECEMBER best employee: Jason, profit= 10888.4404
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+Best employee by year Dick with profit = 149744.8249
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
