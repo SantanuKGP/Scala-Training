@@ -1,0 +1,63 @@
+For month JANUARY, max gatherer : Rick
+For month FEBRUARY, max gatherer : Jake
+For month MARCH, max gatherer : Dick
+For month APRIL, max gatherer : Jake
+For month MAY, max gatherer : Jason
+For month JUNE, max gatherer : Dick
+For month JULY, max gatherer : Peter
+For month AUGUST, max gatherer : Dick
+For month SEPTEMBER, max gatherer : Jake
+For month OCTOBER, max gatherer : Jason
+For month NOVEMBER, max gatherer : John
+For month DECEMBER, max gatherer : Jason
+=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*
+For fruit apples, max gatherer : John
+For fruit oranges, max gatherer : Nick
+For fruit strawberries, max gatherer : Jason
+For fruit plums, max gatherer : Jason
+For fruit pears, max gatherer : Dick
+For fruit tomatoes, max gatherer : Peter
+=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*
+For month JANUARY, max profitable : oranges
+For month FEBRUARY, max profitable : oranges
+For month MARCH, max profitable : oranges
+For month APRIL, max profitable : oranges
+For month MAY, max profitable : oranges
+For month JUNE, max profitable : pears
+For month JULY, max profitable : pears
+For month AUGUST, max profitable : pears
+For month SEPTEMBER, max profitable : pears
+For month OCTOBER, max profitable : pears
+For month NOVEMBER, max profitable : apples
+For month DECEMBER, max profitable : apples
+=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*
+For month JANUARY, worst profitable : plums
+For month FEBRUARY, worst profitable : plums
+For month MARCH, worst profitable : plums
+For month APRIL, worst profitable : strawberries
+For month MAY, worst profitable : strawberries
+For month JUNE, worst profitable : strawberries
+For month JULY, worst profitable : strawberries
+For month AUGUST, worst profitable : strawberries
+For month SEPTEMBER, worst profitable : strawberries
+For month OCTOBER, worst profitable : strawberries
+For month NOVEMBER, worst profitable : strawberries
+For month DECEMBER, worst profitable : oranges
+=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*
+For month JANUARY, best employee : Rick
+For month FEBRUARY, best employee : Jake
+For month MARCH, best employee : Jake
+For month APRIL, best employee : Jake
+For month MAY, best employee : Jason
+For month JUNE, best employee : Dick
+For month JULY, best employee : Peter
+For month AUGUST, best employee : Dick
+For month SEPTEMBER, best employee : Peter
+For month OCTOBER, best employee : Nick
+For month NOVEMBER, best employee : John
+For month DECEMBER, best employee : Jason
+=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*
+Best fruit: pears, with profit= 274009.2486
+Worst fruit: strawberries, with profit= 38519.3866
+Best employee: Dick, with profit= 149744.8249
+=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*=-*
