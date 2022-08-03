@@ -27,11 +27,14 @@ object Main extends App{
   def copy(x :Array[String]) :String={
     x.foldRight("")( _ + " " + _)
   }
-  def coreDigit(x: BigInt, y: BigInt):BigInt={
+  def coreDigit(str: String):String={
+    val input=str.split(" ")
+    val x=BigInt(input.head)
+    val y=BigInt(input(1))
     val z=((x%9)*(y%9))%9
-    if(z!=0) z else 9
+    if(z!=0) z.toString else "9"
   }
-  println(coreDigit(9875,4))
+  println(coreDigit("9875 4"))
   def exam_data(ix : String) : String={
     val x= ix.filter(_ !=',').split(' ').map(_.toInt)
     if(x(0)*x(1)-x(2)> 0) "No" else "Yes"
@@ -40,6 +43,7 @@ object Main extends App{
   var inDir="exam_data.txt"
   var outDir="exam_data_out.txt"
   fileData(exam_data,inDir,outDir)
+  fileData(coreDigit,"CoreData.txt","CoreDataOut.txt")
 /*
   class meow{
     var x=0
