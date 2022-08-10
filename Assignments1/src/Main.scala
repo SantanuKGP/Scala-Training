@@ -4,10 +4,8 @@ import scala.annotation.tailrec
 
 object Main extends App{
   def fileData( f : String => String =copy,inputFile : String, outputFile : String="Out.txt"): Unit ={
-
     val read=fromFile(inputFile)
     val it=read.getLines()
-
     val writer=new PrintWriter(new File(outputFile))
     while(it.hasNext){
       val line=it.next()
@@ -44,19 +42,22 @@ object Main extends App{
   var outDir="exam_data_out.txt"
   fileData(exam_data,inDir,outDir)
   fileData(coreDigit,"CoreData.txt","CoreDataOut.txt")
-/*
-  class meow{
-    var x=0
-    def inc ={x= x+1; x}
-  }*/
 
-  def thief_data(ix: String): String={
-    //var z=new meow();
-    var z=ix.head
-    val flip= ix.slice(1,ix.length).foldLeft('1'-ix.head){
-      (x,y)=>  {if(y!=z) {z=y;x+1 } else {z=y;x}}
+  def thief_data(ix: String): String= {
+    var z = ix.head
+    val flip = ix.slice(1, ix.length).foldLeft('1' - ix.head) {
+      (x, y) => {
+        if (y != z) {
+          z = y;
+          x + 1
+        } else {
+          z = y;
+          x
+        }
+      }
     }
     flip.toString
+  }
 
     /*
     @tailrec
@@ -67,10 +68,9 @@ object Main extends App{
     }
     val t='1'-ix.head
     (flip(ix)+t).toString*/
-  }
+
   println(thief_data("10011"))
   println(thief_data("0011"))
   inDir="thief_data.txt"
   outDir="thief_data_out.txt"
-  //fileData(thief_data,inDir,outDir)
 }

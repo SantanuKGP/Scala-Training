@@ -1,99 +1,78 @@
-import scala.io.Source.fromFile
 import java.time.LocalDate
 import java.time.Month._
+import scala.collection.mutable
+import scala.io.Source.fromFile
 
 object harvestNew extends App {
-  val person_fruit=fromFile("harvest.csv")
-  val fruit_price=fromFile("prices.csv")
-  var pf_data= Array[Array[String]]()
-  var fp_data=Array[Array[String]]()
-  for(line <- person_fruit.getLines()) pf_data= pf_data :+ line.split(",")
-  for(line <- fruit_price.getLines()) fp_data= fp_data :+ line.split(",")
 
-  // filtering
-  pf_data=pf_data.tail
-  fp_data=fp_data.tail
+  def person_fruit_csv = fromFile("harvest.csv").getLines().drop(1).map(_.split(","))
+  def fruit_price_csv = fromFile("prices.csv").getLines().drop(1).map(_.split(","))
+/*
+  val months=Array(JANUARY,FEBRUARY,MARCH,APRIL,MAY,JUNE,JULY,AUGUST,SEPTEMBER,OCTOBER,NOVEMBER,DECEMBER).map(_.toString)
+  val gatherers=person_fruit_csv.map(_.head).distinct
+  val fruits= person_fruit_csv.map(_(2)).distinct
 
-
-  val months=Array(JANUARY,FEBRUARY,MARCH,APRIL,MAY,JUNE,JULY,AUGUST,SEPTEMBER,OCTOBER,NOVEMBER,DECEMBER)
-  val gatherers=(pf_data map(_(0))).distinct
-  val fruits= (pf_data map(_(2))).distinct
-
-
-  val monthly_max_gatherer= pf_data.groupMap(x=>(LocalDate.parse(x(1)).getMonth,x(0)))(x=> x(3).toDouble).map(x=> (x._1,x._2.sum))
+  val monthly_max_gatherer=person_fruit_csv.toList
+    .groupMap(x=>(LocalDate.parse(x(1)).getMonth.toString,x.head))(x=> x(3).toDouble)
+    .map(x=> (x._1,x._2.sum))
     .groupBy(x => x._1._1).map(x=> (x._1,x._2.maxBy(_._2)._1._2))
+
+//  println(monthly_max_gatherer)
   months.foreach(x=> println(s"For month $x, max gatherer : " +monthly_max_gatherer(x)))
   println("=-*"*20)
 
-  val fruit_max_gatherer= pf_data.groupMap(x=>(x(2),x(0)))(x=> x(3).toDouble).map(x=> (x._1,x._2.sum))
+
+  val fruit_max_gatherer= person_fruit_csv.toList
+    .groupMap(x=>(x(2),x(0)))(x=> x(3).toDouble).map(x=> (x._1,x._2.sum))
     .groupBy(x => x._1._1).map(x=> (x._1,x._2.maxBy(_._2)._1._2))
+
   fruits.foreach(x=> println(s"For fruit $x, max gatherer : " +fruit_max_gatherer(x)))
   println("=-*"*20)
 
-/*  val fruitEarning=for{
-    x <- pf_data
-    y <- fp_data  if (x(2) == y(0)) && (x(1)== LocalDate.parse(y(1)).minusDays(1).toString)
-  } yield {
-    (y(0), LocalDate.parse(x(1)).getMonth, x(3).toDouble * y(2).toDouble,x(0))
-  }*/
-  // fruitEarning fruit name, month, price
-  val monthly_best_earning_fruit=(for{
-    x <- pf_data
-    y <- fp_data  if (x(2) == y(0)) && (x(1)== LocalDate.parse(y(1)).minusDays(1).toString)
-  } yield {
-    (y(0), LocalDate.parse(x(1)).getMonth, x(3).toDouble * y(2).toDouble,x(0))
-  }).groupMap(x=> (x._2,x._1))(_._3).map(x=>(x._1,x._2.sum))
-    .groupBy(x => x._1._1).map(x=> (x._1,x._2.maxBy(_._2)._1._2))
+*/
+  val prices=fruit_price_csv.toList.groupMap(x=> (x(0),LocalDate.parse(x(1)).minusDays(1).toString))(x=> x(2).toDouble).map(x=>(x._1,x._2.sum))
+  def combined_data:mutable.Map[(String,String,String),Double]={
+    val m=scala.collection.mutable.Map[(String,String,String),Double]().withDefaultValue(0.0)
+    person_fruit_csv.toList.foreach{x=>
+      val key=(x(1).take(7),x(0),x(2)) // data, person, fruit
+      m(key)=m(key)+x(3).toDouble*prices(x(2),x(1))
+    }
+    m
+  }
+//  println(combined_data)
+
+  //  val monthly_best_earning_fruit=combined_data.groupMap(x=> (x._1._1,x._1._2))(x=> x._2)
+  val monthly_best_earning_fruit=combined_data.groupBy(x=> (x._1._1,x._1._3))
+    .map(x=> (x._1,x._2.values.sum))
+    .groupBy(_._1._1).map(x=>(x._1,x._2.maxBy(_._2)._1._2))
+
+  println(monthly_best_earning_fruit)
 
 
-  months.foreach(x=> println(s"For month $x, max profitable : " +monthly_best_earning_fruit(x)))
-  println("=-*"*20)
 
-  val monthly_worst_earning_fruit=(for{
-    x <- pf_data
-    y <- fp_data  if (x(2) == y(0)) && (x(1)== LocalDate.parse(y(1)).minusDays(1).toString)
-  } yield {
-    (y(0), LocalDate.parse(x(1)).getMonth, x(3).toDouble * y(2).toDouble,x(0))
-  }).groupMap(x=> (x._2,x._1))(_._3).map(x=>(x._1,x._2.sum))
-    .groupBy(x => x._1._1).map(x=> (x._1,x._2.minBy(_._2)._1._2))
-  months.foreach(x=> println(s"For month $x, worst profitable : " +monthly_worst_earning_fruit(x)))
-  println("=-*"*20)
+  val monthly_worst_earning_fruit=combined_data.groupBy(x=> (x._1._1,x._1._3))
+    .map(x=> (x._1,x._2.values.sum))
+    .groupBy(_._1._1).map(x=>(x._1,x._2.minBy(_._2)._1._2))
+  println(monthly_worst_earning_fruit)
 
-  val monthly_best_employee_fruit=(for{
-    x <- pf_data
-    y <- fp_data  if (x(2) == y(0)) && (x(1)== LocalDate.parse(y(1)).minusDays(1).toString)
-  } yield {
-    (y(0), LocalDate.parse(x(1)).getMonth, x(3).toDouble * y(2).toDouble,x(0))
-  }).groupMap(x=> (x._2,x._4))(_._3).map(x=>(x._1,x._2.sum))
-    .groupBy(x => x._1._1).map(x=> (x._1,x._2.maxBy(_._2)._1._2))
-  months.foreach(x=> println(s"For month $x, best employee : " +monthly_best_employee_fruit(x)))
-  println("=-*"*20)
+  val best_employee=combined_data.groupBy(x=> (x._1._1,x._1._2))
+    .map(x=> (x._1,x._2.values.sum))
+    .groupBy(_._1._1).map(x=>(x._1,x._2.maxBy(_._2)._1._2))
+  println(best_employee)
 
-  val best_earning_fruit=(for{
-    x <- pf_data
-    y <- fp_data  if (x(2) == y(0)) && (x(1)== LocalDate.parse(y(1)).minusDays(1).toString)
-  } yield {
-    (y(0), LocalDate.parse(x(1)).getMonth, x(3).toDouble * y(2).toDouble,x(0))
-  }).groupMap(_._1)(_._3).map(x=>(x._1,x._2.sum)).maxBy(_._2)
-  println(f"Best fruit: ${best_earning_fruit._1}, with profit= ${best_earning_fruit._2}%.4f")
+  val yearly_best_earning_fruit=combined_data.groupBy(x=>(x._1._1.take(4),x._1._3))
+    .map(x=> (x._1,x._2.values.sum))
+    .maxBy(_._2)
+  println(yearly_best_earning_fruit._1._2)
 
+  val yearly_worst_earning_fruit=combined_data.groupBy(x=>(x._1._1.take(4),x._1._3))
+    .map(x=> (x._1,x._2.values.sum))
+    .minBy(_._2)
+  println(yearly_worst_earning_fruit._1._2)
 
-  val worst_earning_fruit=(for{
-    x <- pf_data
-    y <- fp_data  if (x(2) == y(0)) && (x(1)== LocalDate.parse(y(1)).minusDays(1).toString)
-  } yield {
-    (y(0), LocalDate.parse(x(1)).getMonth, x(3).toDouble * y(2).toDouble,x(0))
-  }).groupMap(x=> x._1)(_._3).map(x=>(x._1,x._2.sum)).minBy(_._2)
-  println(f"Worst fruit: ${worst_earning_fruit._1}, with profit= ${worst_earning_fruit._2}%.4f")
+  val yearly_best_employee=combined_data.groupBy(x=>(x._1._1.take(4),x._1._2))
+    .map(x=> (x._1,x._2.values.sum))
+    .maxBy(_._2)
+  println(yearly_best_employee._1._2)
 
-  val best_employee=(for{
-    x <- pf_data
-    y <- fp_data  if (x(2) == y(0)) && (x(1)== LocalDate.parse(y(1)).minusDays(1).toString)
-  } yield {
-    (y(0), LocalDate.parse(x(1)).getMonth, x(3).toDouble * y(2).toDouble,x(0))
-  }).groupMap(_._4)(_._3).map(x=>(x._1,x._2.sum)).maxBy(_._2)
-  println(f"Best employee: ${best_employee._1}, with profit= ${best_employee._2}%.4f")
-  println("=-*"*20)
-  person_fruit.close()
-  fruit_price.close()
 }

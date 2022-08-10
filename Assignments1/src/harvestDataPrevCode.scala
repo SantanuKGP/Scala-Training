@@ -30,10 +30,8 @@ object harvestDataPrevCode extends App{
       val month_name= LocalDate.parse(data(1)).getMonth
       val key= List(month_name.toString,data(0),data(2))
       m_p_f(key)=m_p_f(key)+ data(3).toDouble
-
       val pf_key=List(data(0),data(2))
       p_f(pf_key)=p_f(pf_key)+ data(3).toDouble
-
       p(data(0))=p(data(0))+data(3).toDouble
     }
 

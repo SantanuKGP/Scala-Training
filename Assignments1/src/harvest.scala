@@ -64,7 +64,6 @@ object harvest extends App{
   println(f"Best employee: ${best_employee._1}, with profit= ${best_employee._2}%.4f")
   println("=-*"*20)
 
-
   person_fruit.close()
   fruit_price.close()
 }
