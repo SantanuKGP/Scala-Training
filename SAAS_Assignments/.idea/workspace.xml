@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assignments1/src/practise.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvest$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvest$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestDataPrevCode$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestDataPrevCode$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$delayedInit$body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/src/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/src/harvest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/src/harvest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/src/harvestDataPrevCode.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/src/harvestDataPrevCode.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/src/harvestNew.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/src/harvestNew.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RockTheJvm Advanced/out/production/RockTheJvm Advanced/AdvancedPatternMatching$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RockTheJvm Advanced/out/production/RockTheJvm Advanced/AdvancedPatternMatching$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RockTheJvm Advanced/out/production/RockTheJvm Advanced/AdvancedPatternMatching.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RockTheJvm Advanced/out/production/RockTheJvm Advanced/AdvancedPatternMatching.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RockTheJvm Advanced/src/AdvancedPatternMatching.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../RockTheJvm Advanced/src/AdvancedPatternMatching.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Problem1_Polymorphism.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem1_Polymorphism.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,17 +92,6 @@
       <updated>1658150301487</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/problem1_Inheritance.scala</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SAAS_Assignments$problem3.ic" NAME="problem3 Coverage Results" MODIFIED="1658315314228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

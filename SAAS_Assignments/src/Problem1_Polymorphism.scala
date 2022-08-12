@@ -46,10 +46,4 @@ sealed class noTriangle(x:Array[Double]) extends triangle(x: Array[Double]){
   override def Type="Invalid"
   if(!isExists) Type
 }
-//
-//class getType{
-//  new RightAngled(x)
-//  new Equilateral(x)
-//  new Isosceles(x)
-//
-//}
+
