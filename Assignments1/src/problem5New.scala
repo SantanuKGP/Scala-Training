@@ -1,0 +1,3 @@
+class problem5New {
+
+}
