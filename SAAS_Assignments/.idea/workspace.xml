@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Assignments1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments1/src/newComparator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments1/src/problem5CaseClass.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments1/src/problem5New.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Collection of Some Codes/src/patternWildCard.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/practise$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/practise$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/practise$delayedInit$body.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/practise.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/practise.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments1/src/harvestNew.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/src/harvestNew.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments1/src/problem5.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/src/problem5.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/out/production/Codeforces/patternLeetCode$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Collection of Some Codes/out/production/Codeforces/patternLeetCode$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/src/patternLeetCode.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Collection of Some Codes/src/patternLeetCode.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problem1_Polymorphism.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem1_Polymorphism.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

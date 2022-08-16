@@ -1,3 +1,4 @@
+package com.santanu
 import scala.annotation.tailrec
 
 object problem5new extends App {
