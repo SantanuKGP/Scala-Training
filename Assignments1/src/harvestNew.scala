@@ -1,31 +1,32 @@
 import java.time.LocalDate
-import java.time.Month._
-import scala.collection.mutable
+
 import scala.io.Source.fromFile
 
 object harvestNew extends App {
 
-  def person_fruit_csv = fromFile("harvest.csv").getLines().drop(1).map(_.split(","))
+  def person_fruit_csv = fromFile("harvest.csv").getLines().drop(1).map(_.split(",").toList)
   def fruit_price_csv = fromFile("prices.csv").getLines().drop(1).map(_.split(","))
 
   val prices=fruit_price_csv.toList.groupMap(x=> (x(0),LocalDate.parse(x(1)).minusDays(1).toString))(x=> x(2).toDouble).map(x=>(x._1,x._2.sum))
 
-  def combined_data= person_fruit_csv.toArray.map(x=> x(3)=(x(3).toDouble*prices(x(2),x(1))).toString)
-/*
-  val monthly_best_earning_fruit=combined_data.groupBy(x=> (x(),x._1._3))
-    .map(x=> (x._1,x._2.values.map(_.toDouble).sum))
+  def combined_data= person_fruit_csv.toList
+    .groupBy(x=>(x(1),x(0),x(2)))
+    .map(x=> (x._1,x._2.head(3).toDouble*prices(x._1._3,x._1._1)))
+
+  val monthly_best_earning_fruit=combined_data.groupBy(x=> (x._1._1.take(7),x._1._3))
+    .map(x=> (x._1,x._2.values.sum))
     .groupBy(_._1._1).map(x=>(x._1,x._2.maxBy(_._2)._1._2))
 
   println(monthly_best_earning_fruit)
 
 
 
-  val monthly_worst_earning_fruit=combined_data.groupBy(x=> (x._1._1,x._1._3))
+  val monthly_worst_earning_fruit=combined_data.groupBy(x=> (x._1._1.take(7),x._1._3))
     .map(x=> (x._1,x._2.values.sum))
     .groupBy(_._1._1).map(x=>(x._1,x._2.minBy(_._2)._1._2))
   println(monthly_worst_earning_fruit)
 
-  val best_employee=combined_data.groupBy(x=> (x._1._1,x._1._2))
+  val best_employee=combined_data.groupBy(x=> (x._1._1.take(7),x._1._2))
     .map(x=> (x._1,x._2.values.sum))
     .groupBy(_._1._1).map(x=>(x._1,x._2.maxBy(_._2)._1._2))
   println(best_employee)
@@ -44,5 +45,5 @@ object harvestNew extends App {
     .map(x=> (x._1,x._2.values.sum))
     .maxBy(_._2)
   println(yearly_best_employee._1._2)
-  */
+
 }
