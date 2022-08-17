@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assignments1/src/harvestOptimized.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$delayedInit$body.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/practise$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/practise$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/practise.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/practise.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assignments1/src/harvestNew.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/src/harvestNew.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/src/practise.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/src/practise.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments1/src/harvestOptimized.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/src/harvestOptimized.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

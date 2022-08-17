@@ -2,7 +2,7 @@ import java.time.LocalDate
 import scala.io.Source.fromFile
 
 object harvestOptimized extends App{
-  def person_fruit_csv = fromFile("harvest.csv").getLines().drop(1).map(_.split(",").toList)
+  def person_fruit_csv = fromFile("harvest.csv").getLines().drop(1).map(_.split(","))
   def fruit_price_csv = fromFile("prices.csv").getLines().drop(1).map(_.split(","))
 
   def monthly_max_gatherer=person_fruit_csv.toList.groupBy(x=> (x(1).take(7),x.head))
