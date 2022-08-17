@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/out/production/Assignments/harvestNew.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/src/harvestNew.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/src/harvestNew.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments1/src/harvestOptimized.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments1/src/harvestOptimized.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.problem1_Inheritance">
+  <component name="RunManager" selected="Application.practice">
     <configuration name="practice" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="practice" />
       <module name="SAAS_Assignments" />
@@ -76,10 +74,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.practice" />
         <item itemvalue="Application.problem1_Inheritance" />
         <item itemvalue="Application.problem1" />
         <item itemvalue="Application.problem14" />
-        <item itemvalue="Application.practice" />
         <item itemvalue="Application.problem16" />
       </list>
     </recent_temporary>

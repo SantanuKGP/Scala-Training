@@ -10,6 +10,8 @@ object practice extends App{
   println(word.length)*/
   List(1,2).map(x=> x+1).map(println)
   List(1,2).foreach(x=>x+1)
+  val x=(1,2).productElementName(1)
+  println()
 }
 /*
   1. Learning from another problem's part:
