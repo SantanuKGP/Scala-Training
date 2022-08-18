@@ -3,13 +3,13 @@ import scala.io.Source._
 object problem2 extends App{
   def numberWord(file: String):Unit={
     var acc=0
-    val regex="[a-z_A-Z0-9-]+".r
+    val regex="[a-zA-Z0-9-]+".r
     for(line <- fromFile(file).getLines()) acc+=regex.findAllMatchIn(line).toList.length
     println(s"Number of Words of $file is "+acc)
   }
 
   def numberWords(file: String):Unit={
-    val regex="[a-z_A-Z\\d-]+".r
+    val regex="[a-zA-Z\\d-]+".r
     val it=fromFile(file)
     try println(s"Number of Words of $file is "+regex.findAllMatchIn(it.mkString).length) finally it.close()
   }

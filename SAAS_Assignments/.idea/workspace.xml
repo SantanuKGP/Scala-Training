@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/Equilateral.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/Isosceles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/Problem1_Polymorphism$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/Problem1_Polymorphism$delayedInit$body.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/Problem1_Polymorphism.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/RightAngled.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/noTriangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/triangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/practice$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAAS_Assignments/practice$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem2$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problem1_Polymorphism.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problem2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem2.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
