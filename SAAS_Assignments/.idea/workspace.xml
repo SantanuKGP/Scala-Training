@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/Equilateral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/Isosceles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/Problem1_Polymorphism$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/Problem1_Polymorphism$delayedInit$body.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/Problem1_Polymorphism.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/RightAngled.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/noTriangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/com/sk/test1/triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/practice$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAAS_Assignments/practice$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SAAS_Assignments/problem2$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Problem1_Polymorphism.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problem2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem2.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,13 +41,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "Debugger_Data_Views_Java"
   }
-}</component>
-  <component name="RunManager" selected="Application.practice">
+}]]></component>
+  <component name="RunManager" selected="Application.problem2">
     <configuration name="practice" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="practice" />
       <module name="SAAS_Assignments" />
@@ -58,13 +70,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="problem16" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="problem16" />
-      <module name="SAAS_Assignments" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="problem1_Inheritance" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="problem1_Inheritance" />
       <module name="SAAS_Assignments" />
@@ -72,13 +77,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="problem2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="problem2" />
+      <module name="SAAS_Assignments" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.problem2" />
         <item itemvalue="Application.practice" />
         <item itemvalue="Application.problem1_Inheritance" />
         <item itemvalue="Application.problem1" />
         <item itemvalue="Application.problem14" />
-        <item itemvalue="Application.problem16" />
       </list>
     </recent_temporary>
   </component>
