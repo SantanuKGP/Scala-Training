@@ -2,6 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86b51d49-a765-49ab-b7f8-a0574e733dd5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/Codeforces.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/out/production/Codeforces/patternLeetCode$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/out/production/Codeforces/patternLeetCode$delayedInit$body.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/out/production/Codeforces/patternLeetCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/src/patternLeetCode.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collection of Some Codes/src/patternWildCard.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problem2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem2.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +45,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Work/MyTraining/ScalaTraining/Scala-Training/RockTheJvm Advanced",
     "settings.editor.selected.configurable": "Debugger_Data_Views_Java"
   }
 }]]></component>
