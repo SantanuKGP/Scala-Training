@@ -8,6 +8,6 @@ object concurrent5 extends App{
   })
   message = "Scala sucks"
   awesomeThread.start()
-  Thread.sleep(2000)
+  Thread.sleep(935)
   println(message)
 }
