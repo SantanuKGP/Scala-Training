@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62333b27-7f5d-4aa6-a6b8-490c9fc2ded9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Multi User Chat Server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Multi User Chat Server/Client$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Multi User Chat Server/Client$delayedInit$body.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Multi User Chat Server/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Multi User Chat Server/Server$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Multi User Chat Server/Server$delayedInit$body.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Multi User Chat Server/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Client.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerClient/out/production/ServerClient/Client$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerClient/out/production/ServerClient/Client$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerClient/out/production/ServerClient/Client$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerClient/out/production/ServerClient/Client$delayedInit$body.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerClient/out/production/ServerClient/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerClient/out/production/ServerClient/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerClient/out/production/ServerClient/Server$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerClient/out/production/ServerClient/Server$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerClient/src/Client.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerClient/src/Client.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServerClient/src/Server.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../ServerClient/src/Server.scala" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2FJFEgCFmaZaoypFVH1foFRhDwG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="Multi User Chat Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Server" />
+      <module name="Multi User Chat Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62333b27-7f5d-4aa6-a6b8-490c9fc2ded9" name="Changes" comment="" />
+      <created>1664202171817</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664202171817</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

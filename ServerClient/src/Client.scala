@@ -32,25 +32,33 @@ class Client (user:String,address : String, port : Int){
   private val messages= scala.collection.mutable.Queue[String]()
   new Thread(() => {
     while(line!="close") {
-      line = readLine("[You] : ")
+      line = readLine("")
       output.writeUTF(encoding(line))
-      Thread.sleep(1000)
-      while(messages.nonEmpty){
+      /*while(messages.nonEmpty){
         decoding(messages.front)
         messages.dequeue()
-      }
+      }*/
     }
     if(isClose(line)){
-      readObject.notify()
+      try{
+        input.close()
+        output.close()
+        ss.close()
+      }
+      catch{
+        case _: Throwable=> println("Closing Error")
+      }
     }
   }).start()
-  Thread.sleep(1000)
-//  while(line!="close"){
+
 
   new Thread(() => {
     while(line!="close"){
       messages.enqueue(input.readUTF())
-//      println(input.readUTF())
+      while(messages.nonEmpty){
+        decoding(messages.front)
+        messages.dequeue()
+      }
   }}).start()
 //  }
   readObject.synchronized{
@@ -114,7 +122,7 @@ class Client (user:String,address : String, port : Int){
       user+":::"+regex.findFirstIn(str).get.filter(_!='@')+":::"+regex.split(str).filter(_!="").reduce(_ +":::" + _)
     }
     catch{
-      case _ : Throwable => println("Got error here!"); user+ ":::"+ "all"+":::"+ str
+      case _ : Throwable => user+ ":::"+ "all"+":::"+ str
     }
   }
 
@@ -122,7 +130,7 @@ class Client (user:String,address : String, port : Int){
     val Line = str.split(":::").toList
     if (Line(1) == user) println(s"[${Line.head}] : ${Line.last}")
     else if (Line(1).toLowerCase == "all" && Line.head!=user) println(s"[${Line.head}] : ${Line.last}")
-    else println("----")
+
   }
 
 }
