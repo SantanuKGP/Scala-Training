@@ -1,5 +1,7 @@
 package concurrentprogramming
 
-object ParallelUtils {
-
+object ParallelUtils extends App{
+//  val parList = List(1,2,3).par
+//  val aParVector= ParVector[Int]
 }
+
