@@ -1,0 +1,5 @@
+package concurrentprogramming
+
+object ParallelUtils {
+
+}
