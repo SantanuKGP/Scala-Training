@@ -1,7 +1,8 @@
 import java.io.{DataInputStream, DataOutputStream, IOException}
 import java.net.{Socket, UnknownHostException}
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.Future
+import scala.concurrent.duration.DurationInt
+import scala.concurrent.{ Future, Promise}
 import scala.io.StdIn.readLine
 import scala.util.{Failure, Random, Success}
 
@@ -26,7 +27,8 @@ class Client (user:String,address : String, port : Int){
   val LockObject= new Object
   var line = ""
   private val messages= scala.collection.mutable.Queue[String]()
-  private val outputFuture = Future{
+
+  private val outputFuture =Future{
     while(line!="close") {
       line = readLine("")
       output.writeUTF(encoding(line))
@@ -45,18 +47,22 @@ class Client (user:String,address : String, port : Int){
   }
 
   inputFuture.onComplete({
-    case Success(_) => println("Input Closed"); doClose()
+    case Success(_) => input.close();println("Input Closed")
     case Failure(exception) => println(s"Input side has got some issues:: $exception")
   })
   outputFuture.onComplete({
-    case Success(_) => println("Output Closed");doClose()
+    case Success(_) => output.close(); println("Output Closed")
     case Failure(exception) => println(s"Output side has got some issues:: $exception")
   })
+//  Thread.sleep(10000)
 
     LockObject.synchronized{
   //    println("I am waiting")
       LockObject.wait()
   //    println("I am here")
+      Thread.sleep(500)
+      ss.close()
+      println("Chat Again!!")
     }
 
 /*  try{
@@ -113,9 +119,9 @@ object Client extends App{
 
   val username= readLine("Enter your username: ")
 
-  val IP= "localhost"
-  new Client(username,IP, 8080)
-/*
+//  val IP= "localhost"
+//  new Client(username,IP, 8080)
+
   val token= Password()
   println("Print the passcode : " + token)
   val time0= System.currentTimeMillis()
@@ -139,7 +145,7 @@ object Client extends App{
 
   println("="*100)
   println(" "*47 + "Chat Ended")
-  println("="*100)*/
+  println("="*100)
 
   private def Password():String={
     val charSet=('a' to 'z') ++ ('A' to 'Z') ++ "@#$!-"
