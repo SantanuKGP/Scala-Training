@@ -1,7 +1,9 @@
 import java.io.{DataInputStream, DataOutputStream, IOException}
 import java.net.{Socket, UnknownHostException}
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.Future
 import scala.io.StdIn.readLine
-import scala.util.Random
+import scala.util.{Failure, Random, Success}
 
 
 class Client (user:String,address : String, port : Int){
@@ -22,22 +24,16 @@ class Client (user:String,address : String, port : Int){
   output.writeUTF(user)
   println(input.readUTF())
 
-  val readObject= new Object
   var line = ""
   private val messages= scala.collection.mutable.Queue[String]()
-  val outputThread= new Thread(() => {
-    while(line!="close") {
+  private val outputFuture = Future{
+    while(isClose(line)) {
       line = readLine("")
       output.writeUTF(encoding(line))
     }
-/*    if(!isClose(line)){
-//      println("notice...")
-      readObject.synchronized{readObject.notify()}
-//      println("notified")
-    }*/
-  })
-  outputThread.start()
-  val inputThread= new Thread(() => {
+  }
+
+  private val inputFuture= Future{
     while(isClose(line)){
       messages.enqueue(input.readUTF())
       while(messages.nonEmpty){
@@ -45,25 +41,30 @@ class Client (user:String,address : String, port : Int){
         messages.dequeue()
       }
     }
+  }
+
+  inputFuture.onComplete({
+    case Success(_) => println(s"$user has successfully log out!")
+    case Failure(exception) => println(s"Input side has got some issues $exception")
+  })
+  outputFuture.onComplete({
+    case Success(_) => println(s"$user has successfully log out!")
+    case Failure(exception) => println(s"Output side has got some issues $exception")
   })
 
-  inputThread.start()
-  inputThread.join()
-  outputThread.join()
-
-/*  readObject.synchronized{
-//    println("I am waiting")
-    readObject.wait()
-//    println("I am here")
-  }*/
+  /*  readObject.synchronized{
+  //    println("I am waiting")
+      readObject.wait()
+  //    println("I am here")
+    }*/
 
   try{
     input.close()
-//    println("input closed")
+    //    println("input closed")
     output.close()
-//    println("output closed")
+    //    println("output closed")
     ss.close()
-//    println("socket closed")
+    //    println("socket closed")
   }
   catch{
     case _: Throwable=> println("Closing Error")
@@ -90,7 +91,6 @@ class Client (user:String,address : String, port : Int){
     val Line = str.split(":::").toList
     if (Line(1) == user) println(s"[${Line.head}] : ${Line.last}")
     else if (Line(1).toLowerCase == "all" && Line.head!=user) println(s"[${Line.head}] : ${Line.last}")
-
   }
 
 }
