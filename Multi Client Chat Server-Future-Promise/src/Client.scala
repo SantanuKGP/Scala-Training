@@ -111,42 +111,9 @@ class Client (user:String,address : String, port : Int){
     if (Line(1) == user) println(s"[${Line.head}] : ${Line.last}")
     else if (Line(1).toLowerCase == "all" && Line.head!=user) println(s"[${Line.head}] : ${Line.last}")
   }
-
 }
-
-object Client extends App{
-
-  val username= readLine("Enter your username: ")
-
-//  val IP= "localhost"
-//  new Client(username,IP, 8080)
-
-  val token= Password()
-  println("Print the passcode : " + token)
-  val time0= System.currentTimeMillis()
-  val passCode=readLine("Enter the passcode : ")
-  val timeTaken= System.currentTimeMillis() - time0
-
-  val timeLimit= new Random().between(2000*token.length,3000*token.length)
-
-  //  println(timeTaken + " " + timeLimit)
-  if(passCode==token && timeLimit>=timeTaken ){
-    println("="*100)
-    println(" "*47 + "Chat Started")
-    println("="*100)
-
-    // code here
-    val IP= "localhost"
-    new Client(username,IP, 8080)
-
-  }
-  else println("Sorry! Try again")
-
-  println("="*100)
-  println(" "*47 + "Chat Ended")
-  println("="*100)
-
-  private def Password():String={
+object authenticator{
+  def Password():String={
     val charSet=('a' to 'z') ++ ('A' to 'Z') ++ "@#$!-"
     val random= new Random()
     val size=random.between(8,11)
@@ -156,5 +123,36 @@ object Client extends App{
       if(!str.contains(charSet(index))) str += charSet(index)
     }
     str
+  }
+}
+object Client {
+
+  def main(args: Array[String]): Unit = {
+    val username= readLine("Enter your username: ")
+
+    val token= authenticator.Password()
+    println("Print the passcode : " + token)
+    val time0= System.currentTimeMillis()
+    val passCode=readLine("Enter the passcode : ")
+    val timeTaken= System.currentTimeMillis() - time0
+
+    val timeLimit= new Random().between(2000*token.length,3000*token.length)
+
+    //  println(timeTaken + " " + timeLimit)
+    if(passCode==token && timeLimit>=timeTaken ){
+      println("="*100)
+      println(" "*47 + "Chat Started")
+      println("="*100)
+
+      // code here
+      val IP= "localhost"
+      new Client(username,IP, 8080)
+
+    }
+    else println("Sorry! Try again")
+
+    println("="*100)
+    println(" "*47 + "Chat Ended")
+    println("="*100)
   }
 }

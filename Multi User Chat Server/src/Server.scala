@@ -1,7 +1,7 @@
 import java.io.{DataInputStream, DataOutputStream, IOException}
 import java.net.{ServerSocket, UnknownHostException}
 
-class Server (private val port : Int){
+class Server (port : Int){
   private var ip_users = 0
   private var m= Map[String,DataOutputStream]()
 

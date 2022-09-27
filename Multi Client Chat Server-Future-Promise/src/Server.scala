@@ -81,6 +81,8 @@ case class Server(port : Int) {
   }
 }
 
-object Server extends App{
-  Server(8080)
+object Server {
+  def main(args: Array[String]): Unit = {
+    new Server(8080)
+  }
 }
