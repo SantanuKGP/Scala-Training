@@ -23,7 +23,7 @@ class Client (user:String,address : String, port : Int){
 
   output.writeUTF(user)
   println(input.readUTF())
-
+  val LockObject= new Object
   var line = ""
   private val messages= scala.collection.mutable.Queue[String]()
   private val outputFuture = Future{
@@ -31,6 +31,7 @@ class Client (user:String,address : String, port : Int){
       line = readLine("")
       output.writeUTF(encoding(line))
     }
+    LockObject.synchronized{LockObject.notify()}
   }
 
   private val inputFuture= Future{
@@ -42,39 +43,21 @@ class Client (user:String,address : String, port : Int){
       }
     }
   }
-  var flag1 = false
-  var flag2 = false
+
   inputFuture.onComplete({
-    case Success(_) => println("InputFuture has been completed!")
+    case Success(_) => println("Input Closed"); doClose()
     case Failure(exception) => println(s"Input side has got some issues:: $exception")
   })
   outputFuture.onComplete({
-    case Success(_) => println("OutputFuture has been completed!")
+    case Success(_) => println("Output Closed");doClose()
     case Failure(exception) => println(s"Output side has got some issues:: $exception")
   })
 
-  private val finalFuture= Future{
-    if(flag1 && flag2)
-    {
-      input.close()
-          println("input closed")
-      output.close()
-          println("output closed")
-      ss.close()
-          println("socket closed")
-    }
-    "success"
-  }
-
-  finalFuture.onComplete({
-    case Success(value) => println(s"$user has ${value+"fully"} log out!"); println("Chat Again!!")
-    case Failure(exception) => println(s"Output side has got some issues:: $exception")
-  })
-  /*  readObject.synchronized{
+    LockObject.synchronized{
   //    println("I am waiting")
-      readObject.wait()
+      LockObject.wait()
   //    println("I am here")
-    }*/
+    }
 
 /*  try{
     input.close()
@@ -89,13 +72,26 @@ class Client (user:String,address : String, port : Int){
   }
   println("Chat Again!!")*/
 
-
+  private def doClose():Unit={
+    try{
+      input.close()
+      //    println("input closed")
+      output.close()
+      //    println("output closed")
+      ss.close()
+      //    println("socket closed")
+    }
+    catch{
+      case _: Throwable=> println("Closing Error")
+    }
+    println("Chat Again!!")
+  }
   private def isClose(x: String): Boolean={
     val y=x.toLowerCase()
     !(y== "close" || y=="exit" ||  y=="over")
   }
 
-  def encoding(str: String):String ={
+  private def encoding(str: String):String ={
     val regex= "@\\w+".r
     try {
       user+":::"+regex.findFirstIn(str).get.filter(_!='@')+":::"+regex.split(str).filter(_!="").reduce(_ +":::" + _)
@@ -105,7 +101,7 @@ class Client (user:String,address : String, port : Int){
     }
   }
 
-  def decoding(str:String):Unit={
+  private def decoding(str:String):Unit={
     val Line = str.split(":::").toList
     if (Line(1) == user) println(s"[${Line.head}] : ${Line.last}")
     else if (Line(1).toLowerCase == "all" && Line.head!=user) println(s"[${Line.head}] : ${Line.last}")
