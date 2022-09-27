@@ -72,8 +72,12 @@ class Server (private val port : Int){
       case _ => true
     }
   }
+
 }
 
-object server extends App{
-  new Server(8080)
+object server{
+
+  def main(args: Array[String]): Unit = {
+    new Server(8080)
+  }
 }

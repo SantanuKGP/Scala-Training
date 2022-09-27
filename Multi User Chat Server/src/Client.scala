@@ -95,34 +95,37 @@ class Client (user:String,address : String, port : Int){
 
 }
 
-object Client extends App{
+object Client {
 
-  val username= readLine("Enter your username: ")
+  def main(args: Array[String]): Unit = {
+    val username= readLine("Enter your username: ")
 
-  val token= Password()
-  println("Print the passcode : " + token)
-  val time0= System.currentTimeMillis()
-  val passCode=readLine("Enter the passcode : ")
-  val timeTaken= System.currentTimeMillis() - time0
+    val token= Password()
+    println("Print the passcode : " + token)
+    val time0= System.currentTimeMillis()
+    val passCode=readLine("Enter the passcode : ")
+    val timeTaken= System.currentTimeMillis() - time0
 
-  val timeLimit= new Random().between(2000*token.length,3000*token.length)
+    val timeLimit= new Random().between(2000*token.length,3000*token.length)
 
-  //  println(timeTaken + " " + timeLimit)
-  if(passCode==token && timeLimit>=timeTaken ){
+    //  println(timeTaken + " " + timeLimit)
+    if(passCode==token && timeLimit>=timeTaken ){
+      println("="*100)
+      println(" "*47 + "Chat Started")
+      println("="*100)
+
+      // code here
+      val IP= "localhost"
+      new Client(username,IP, 8080)
+
+    }
+    else println("Sorry! Try again")
+
     println("="*100)
-    println(" "*47 + "Chat Started")
+    println(" "*47 + "Chat Ended")
     println("="*100)
-
-    // code here
-    val IP= "localhost"
-    new Client(username,IP, 8080)
-
   }
-  else println("Sorry! Try again")
 
-  println("="*100)
-  println(" "*47 + "Chat Ended")
-  println("="*100)
 
   private def Password():String={
     val charSet=('a' to 'z') ++ ('A' to 'Z') ++ "@#$!-"
