@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62333b27-7f5d-4aa6-a6b8-490c9fc2ded9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Multi Client Chat Server-Future-Promise/out/production/Multi Client Chat Server-Future-Promise/Client$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Multi Client Chat Server-Future-Promise/out/production/Multi Client Chat Server-Future-Promise/Client$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Multi Client Chat Server-Future-Promise/out/production/Multi Client Chat Server-Future-Promise/Client$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Multi Client Chat Server-Future-Promise/out/production/Multi Client Chat Server-Future-Promise/Client$delayedInit$body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Multi Client Chat Server-Future-Promise/out/production/Multi Client Chat Server-Future-Promise/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Multi Client Chat Server-Future-Promise/out/production/Multi Client Chat Server-Future-Promise/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Multi Client Chat Server-Future-Promise/src/Client.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Multi Client Chat Server-Future-Promise/src/Client.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

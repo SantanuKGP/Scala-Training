@@ -1,8 +1,7 @@
 import java.io.{DataInputStream, DataOutputStream, IOException}
 import java.net.{Socket, UnknownHostException}
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.duration.DurationInt
-import scala.concurrent.{ Future, Promise}
+import scala.concurrent.Future
 import scala.io.StdIn.readLine
 import scala.util.{Failure, Random, Success}
 
