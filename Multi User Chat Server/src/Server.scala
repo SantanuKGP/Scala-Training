@@ -1,9 +1,7 @@
 import java.io.{DataInputStream, DataOutputStream, IOException}
 import java.net.{ServerSocket, UnknownHostException}
 
-object Server extends App{
-
-  private val port = 8080
+class Server (private val port : Int){
   private var ip_users = 0
   private var m= Map[String,DataOutputStream]()
 
@@ -74,4 +72,8 @@ object Server extends App{
       case _ => true
     }
   }
+}
+
+object server extends App{
+  new Server(8080)
 }
