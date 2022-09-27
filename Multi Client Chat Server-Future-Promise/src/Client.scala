@@ -27,7 +27,7 @@ class Client (user:String,address : String, port : Int){
   var line = ""
   private val messages= scala.collection.mutable.Queue[String]()
   private val outputFuture = Future{
-    while(isClose(line)) {
+    while(line!="close") {
       line = readLine("")
       output.writeUTF(encoding(line))
     }
@@ -42,23 +42,41 @@ class Client (user:String,address : String, port : Int){
       }
     }
   }
-
+  var flag1 = false
+  var flag2 = false
   inputFuture.onComplete({
-    case Success(_) => println(s"$user has successfully log out!")
-    case Failure(exception) => println(s"Input side has got some issues $exception")
+    case Success(_) => println("InputFuture has been completed!")
+    case Failure(exception) => println(s"Input side has got some issues:: $exception")
   })
   outputFuture.onComplete({
-    case Success(_) => println(s"$user has successfully log out!")
-    case Failure(exception) => println(s"Output side has got some issues $exception")
+    case Success(_) => println("OutputFuture has been completed!")
+    case Failure(exception) => println(s"Output side has got some issues:: $exception")
   })
 
+  private val finalFuture= Future{
+    if(flag1 && flag2)
+    {
+      input.close()
+          println("input closed")
+      output.close()
+          println("output closed")
+      ss.close()
+          println("socket closed")
+    }
+    "success"
+  }
+
+  finalFuture.onComplete({
+    case Success(value) => println(s"$user has ${value+"fully"} log out!"); println("Chat Again!!")
+    case Failure(exception) => println(s"Output side has got some issues:: $exception")
+  })
   /*  readObject.synchronized{
   //    println("I am waiting")
       readObject.wait()
   //    println("I am here")
     }*/
 
-  try{
+/*  try{
     input.close()
     //    println("input closed")
     output.close()
@@ -69,7 +87,7 @@ class Client (user:String,address : String, port : Int){
   catch{
     case _: Throwable=> println("Closing Error")
   }
-  println("Chat Again!!")
+  println("Chat Again!!")*/
 
 
   private def isClose(x: String): Boolean={
@@ -99,6 +117,9 @@ object Client extends App{
 
   val username= readLine("Enter your username: ")
 
+  val IP= "localhost"
+  new Client(username,IP, 8080)
+/*
   val token= Password()
   println("Print the passcode : " + token)
   val time0= System.currentTimeMillis()
@@ -122,7 +143,7 @@ object Client extends App{
 
   println("="*100)
   println(" "*47 + "Chat Ended")
-  println("="*100)
+  println("="*100)*/
 
   private def Password():String={
     val charSet=('a' to 'z') ++ ('A' to 'Z') ++ "@#$!-"
